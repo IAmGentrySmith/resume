@@ -1,0 +1,122 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Original Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+% Document Author:
+% Gentry H. Smith <iamgentrysmith@gmail.com>
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.0cm, top=1.5cm, right=1.0cm, bottom=1.2cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%\colorlet{awesome}{awesome-orange}
+% Uncomment if you would like to specify your own color 
+%OSU=HTML:FF7300
+%Chesapeake=HTML:004271
+%Ellucian=HTML:682573
+%Paycom=HTML:008f4b
+\definecolor{awesome}{HTML}{008f4b}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Additionally utilized packages
+\usepackage{multicol}
+\usepackage{anyfontsize}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,edge,right]{./profile.jpg}
+\name{Gentry}{Smith}
+% \position{M.S. Computational Chemistry{\enskip\cdotp\enskip}Automation Consultant}
+\address{915 E Warner Ave Guthrie, OK 73044}
+
+\mobile{913-231-3282}
+\email{iamgentrysmith@gmail.com}
+%\homepage{www.iamgentrysmith.com}
+%\github{iamgentrysmith}
+\linkedin{iamgentrysmith}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+%\twitter{@iamgentrysmith}
+% \skype{iamgentrysmith}
+%\reddit{iamgentrysmith}
+% \extrainfo{extra informations}
+
+%\quote{``The future is coming. Shape it for yourself."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[L]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Gentry Smith~~~·~~~Resume}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{resume/summary.tex}
+\vspace{2mm}
+\input{resume/skills.tex}
+\vspace{-6mm}
+\input{resume/education.tex}
+\input{resume/techExperience.tex}
+\newpage
+\input{resume/researchExperience.tex}
+\input{resume/academicExperience.tex}
+\input{resume/honors.tex}
+\input{resume/presentations.tex}
+%\input{resume/writing.tex}
+%\input{resume/committees.tex}
+%\input{resume/extracurricular.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}

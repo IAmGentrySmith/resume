@@ -1,0 +1,141 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% \colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{HTML}{8B2332}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%%% ADDITIONAL PACKAGES
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{profile}
+\name{Gentry H.}{Smith}
+\position{Technical Support Analyst I{\enskip\cdotp\enskip}M.S., Computational Chemistry}
+\address{7501 W Memorial Rd \\Oklahoma City, OK 73142}
+
+\mobile{913 231-3282}
+\email{gentry.smith@paycomonline.com}
+% \homepage{www.iamgentrysmith.com}
+% \github{iamgentrysmith}
+% \linkedin{iamgentrysmith}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world. Now!"}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+{University of Denver}
+{7501 W Memorial Rd \\Oklahoma City, OK 73142}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Letter of Recommendation for Matt Arvizu}
+% How the letter is opened
+\letteropening{Dear Admissions Committee,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+	
+	% Print the header with above personal informations
+	% Give optional argument to change alignment(C: center, L: left, R: right)
+	\makecvheader[R]
+	
+	% Print the footer with 3 arguments(<left>, <center>, <right>)
+	% Leave any of these blank if they are not needed
+%	\makecvfooter
+%	{\today}
+%	{Gentry H. Smith~~·~~Cover Letter}
+%	{}
+	
+	% Print the title with above letter informations
+	\makelettertitle
+	
+	%-------------------------------------------------------------------------------
+	%	LETTER CONTENT
+	%-------------------------------------------------------------------------------
+	\begin{cvletter}
+		
+%		\lettersection{About Me}
+		%%% Generic Intro
+		I am writing to offer my recommendation for Matt's admission into the Information Systems Security Master's Degree program at the University of Denver. 
+		I have known Matt for four months now as a teammate and have thoroughly enjoyed working with him.
+		I believe that he will show himself to be an excellent student capable of building lasting relationships with faculty and students alike while proving himself technically proficient and a hard worker.
+		
+		In the brief time I have known Matt, he has shown an intense fervor for cybersecurity, often spending his free time to work through online courses that expand his knowledge information systems. 
+		With a master's degree in computational chemistry, I recognize Matt's zeal for learning and applying his knowledge in a way consistent with, if not surpassing, most graduate students I have known. 
+		I see his potential as a bright student who will always bring something to the table, whether as a critical analysis of or a constructive addition to whatever the subject may be.
+		
+		I offer my utmost support for Matt's application to Information Systems Security Master's Degree program at the University of Denver. 
+		Thank you for your time and consideration. 
+		Please feel free to reach out to me if you have any questions regarding his character, work ethic, or any other qualities related to his program.
+		
+		
+	\end{cvletter}
+	
+	
+	%-------------------------------------------------------------------------------
+	% Print the signature and enclosures with above letter informations
+	\makeletterclosing
+	
+\end{document}
